@@ -288,6 +288,13 @@ module.exports = function(grunt) {
         files: [
           { src: 'src/ngLocale/**', dest: 'build/i18n/', expand: true, flatten: true }
         ]
+      },
+      dist: {
+        files: [
+          { src: 'build/angular.js', dest: 'dist/angular.js', expand: true, flatten: true },
+          { src: 'build/angular.min.js', dest: 'dist/angular.min.js', expand: true, flatten: true },
+          { src: 'build/angular.min.js.map', dest: 'dist/angular.min.js.map', expand: true, flatten: true }
+        ]
       }
     },
 

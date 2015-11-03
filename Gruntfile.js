@@ -101,7 +101,8 @@ module.exports = function(grunt) {
 
     clean: {
       build: ['build'],
-      tmp: ['tmp']
+      tmp: ['tmp'],
+      dist: ['dist']
     },
 
     jshint: {
@@ -291,9 +292,9 @@ module.exports = function(grunt) {
       },
       dist: {
         files: [
-          { src: 'build/angular.js', dest: 'dist/angular.js', expand: true, flatten: true },
-          { src: 'build/angular.min.js', dest: 'dist/angular.min.js', expand: true, flatten: true },
-          { src: 'build/angular.min.js.map', dest: 'dist/angular.min.js.map', expand: true, flatten: true }
+          { src: 'build/angular.js', dest: 'dist/', expand: true, flatten: true },
+          { src: 'build/angular.min.js', dest: 'dist/', expand: true, flatten: true },
+          { src: 'build/angular.min.js.map', dest: 'dist/', expand: true, flatten: true }
         ]
       }
     },
